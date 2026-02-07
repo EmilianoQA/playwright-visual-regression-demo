@@ -1,62 +1,44 @@
 # Playwright Visual Regression Demo
 
-Mini proyecto de exploración de **Visual Regression Testing** utilizando **Playwright con TypeScript**.
+A mini exploration project of Visual Regression Testing using Playwright with TypeScript.
 
----
+## Objective
 
-## Objetivo
+Implement automated tests that detect unexpected visual changes in a web application using snapshots.
 
-Implementar pruebas automatizadas que detecten cambios visuales inesperados en una aplicación web mediante el uso de snapshots.
+## Project Scope
 
----
+- Full page screenshot with `toHaveScreenshot`
+- Screenshot of a specific component
+- Baseline image management
+- Pixel-to-pixel comparison in subsequent runs
+- Simulation of visual changes to validate difference detection (diff)
 
-## Alcance del proyecto
-
-- Screenshot completo de página con `toHaveScreenshot`
-- Screenshot de componente específico
-- Gestión de imágenes baseline
-- Comparación pixel a pixel en ejecuciones posteriores
-- Simulación de cambio visual para validar la detección de diferencias (diff)
-
----
-
-## Stack utilizado
+## Tech Stack
 
 - Playwright
 - TypeScript
 - Node.js
 
----
+## How to Run the Project
 
-## Cómo ejecutar el proyecto
-
-### Instalar dependencias
+### Install dependencies
 
 ```bash
 npm install
-```
 
-### Ejecutar los tests
+Run the tests
 
-```bash
 npx playwright test
-```
 
-### Actualizar snapshots (cuando el cambio visual es intencional)
+Update snapshots (when visual change is intentional)
 
-```bash
 npx playwright test --update-snapshots
-```
 
----
+Note
 
-## Nota
+Visual Regression Testing does not replace functional tests but complements the automation strategy by protecting the visual stability of the interface against changes or refactors.
+Author
 
-El Visual Regression Testing no reemplaza los tests funcionales, pero complementa la estrategia de automatización al proteger la estabilidad visual de la interfaz frente a cambios o refactors.
-
----
-
-## Autor
-
-**Emiliano Maure**  
+Emiliano Maure
 QA Automation
